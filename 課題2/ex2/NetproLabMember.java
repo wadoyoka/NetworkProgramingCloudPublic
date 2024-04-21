@@ -28,7 +28,6 @@ public class NetproLabMember {
             long iwaiMan = Combination(man, data[i][2]);
             //男性のみ/総数 = 女性が岩井研究にその年に入らない確率
             total *=(double)iwaiMan/iwai;
-            System.out.println(total);
         }
         System.out.println("15年間岩井研に女性の学生が来ない確率は"+total+"%");
     }
