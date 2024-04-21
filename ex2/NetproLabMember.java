@@ -1,4 +1,4 @@
-package 課題2.ex2;
+package ex2;
 
 import java.util.Random;
 

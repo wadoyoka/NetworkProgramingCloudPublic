@@ -1,4 +1,4 @@
-package 課題2.ex2;
+package ex2;
 
 // C言語では、#include に相当する
 import java.io.BufferedReader;
