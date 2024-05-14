@@ -6,7 +6,7 @@ import java.net.BindException;
 import java.net.Socket; //ネットワーク関連のパッケージを利用する
 import java.util.Scanner;
 
-public class XmasTCPClient {
+public class NijyouClient {
 
     public static void main(String arg[]) {
         try {
@@ -36,7 +36,7 @@ public class XmasTCPClient {
             while (true) {
                 System.out.println("プレゼントを送ります");
                 oos = new ObjectOutputStream(socket.getOutputStream());
-                System.out.println("メッセージを入力してください(例:メリークリスマス)(※qを入力でプログラム終了します) ↓");
+                System.out.println("メッセージを入力してください(例:こんにちは)(※qを入力でプログラム終了します) ↓");
                 String message = new java.util.Scanner(System.in, "Shift-JIS").nextLine();
                 if (message.equals("q")) {
                     System.out.println("プログラムを終了しました");
@@ -49,7 +49,7 @@ public class XmasTCPClient {
                 boolean dataflagment = false;
                 while (!dataflagment) {
                     try {
-                        System.out.println("データの内容を入力してください(例:お菓子)(※qを入力でプログラム終了します) ↓");
+                        System.out.println("数値を入力してください(例:3)(※qを入力でプログラム終了します) ↓");
                         String data = new java.util.Scanner(System.in, "Shift-JIS").nextLine();
                         if (data.equals("q")) {
                             System.out.println("プログラムを終了します。");

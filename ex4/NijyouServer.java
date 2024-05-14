@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class XmasServer {
+public class NijyouServer {
     private static int serverProcess(int content) {
         return (int)(Math.pow(content, 2));
     }
