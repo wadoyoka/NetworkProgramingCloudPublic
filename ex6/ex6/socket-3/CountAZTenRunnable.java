@@ -1,5 +1,3 @@
-
-
 // Runnable インターフェースを実装することで、このクラスのインスタンスはスレッドとして実行可能になります。
 public class CountAZTenRunnable implements Runnable {
     char name;
