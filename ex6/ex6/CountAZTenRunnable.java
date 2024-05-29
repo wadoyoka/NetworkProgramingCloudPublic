@@ -1,12 +1,12 @@
 
 
 // Runnable インターフェースを実装することで、このクラスのインスタンスはスレッドとして実行可能になります。
-public class CountTenRunnable implements Runnable {
+public class CountAZTenRunnable implements Runnable {
     char name;
     // main メソッドはプログラムのエントリーポイントです。
     public static void main(String[] args){
         char [] cts = new char[26];
-        CountTenRunnable [] ctens = new CountTenRunnable[26];
+        CountAZTenRunnable [] ctens = new CountAZTenRunnable[26];
         Thread []ths = new Thread[26];
         for (int i = 0; i < 26; i++) {
             cts[i] = (char)(97 + i);
@@ -14,7 +14,7 @@ public class CountTenRunnable implements Runnable {
         }
 
         for (int i = 0; i < ths.length; i++) {
-            ctens[i] = new CountTenRunnable();
+            ctens[i] = new CountAZTenRunnable();
             ctens[i].setChar(cts[i]);
             ths[i] = new Thread(ctens[i],"th-"+String.valueOf(i));
         }
