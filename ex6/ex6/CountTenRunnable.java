@@ -10,7 +10,7 @@ public class CountTenRunnable implements Runnable {
         Thread []ths = new Thread[26];
         for (int i = 0; i < 26; i++) {
             cts[i] = (char)(97 + i);
-            System.out.println(cts[i]);
+            // System.out.println(cts[i]);
         }
 
         for (int i = 0; i < ths.length; i++) {
@@ -59,7 +59,6 @@ public class CountTenRunnable implements Runnable {
 
     // run メソッドは、新しいスレッドが実行するコードを含みます。
     public void run() {
-        System.out.println(getClass());
         // この try-catch ブロックは、0 から 9 までの値を 1000 ミリ秒間隔で出力するループを実行します。
         try {
             for(int i = 0; i < 10; i++) {
