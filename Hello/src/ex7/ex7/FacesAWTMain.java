@@ -49,9 +49,12 @@ public class FacesAWTMain {
 			String state = "normal";
 
 			for (int i = 0; i < fobj1.length; i++) {
-				if (i % 3 == 0 && i != 0) {
+				if (i == 3) {
 					yStart += h;
 					state = "smile";
+				}else if (i==6) {
+					yStart += h;
+					state = "angry";
 				}
 				fobj1[i] = new FaceObj(g, w, h, xStart + w * (i % 3), yStart, state);
 			}
@@ -130,6 +133,9 @@ public class FacesAWTMain {
 			}else if (state.equals("smile")) {
 				g.drawLine(xMiddle - mx / 2, yMiddle-20, xMiddle, yMiddle);
 				g.drawLine(xMiddle, yMiddle, xMiddle + mx / 2, yMiddle-20);
+			}else if (state.equals("angry")) {
+				g.drawLine(xMiddle - mx / 2, yMiddle+20, xMiddle, yMiddle);
+				g.drawLine(xMiddle, yMiddle, xMiddle + mx / 2, yMiddle+20);
 			}
 		}
 	}
