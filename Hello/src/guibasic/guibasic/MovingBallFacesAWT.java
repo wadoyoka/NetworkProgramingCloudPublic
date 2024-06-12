@@ -1,4 +1,4 @@
-package guibasic;
+package guibasic.guibasic;
 
 import java.awt.Color;
 import java.awt.Frame;
